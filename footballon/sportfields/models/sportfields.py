@@ -10,7 +10,7 @@ class SportField(FootballonModel):
   Sport fields can generate weekly hours available for users
   to book and thus creating new football matches.
 
-  Users can query sportfields ordered by distance and with
+  Users can query sport fields ordered by distance and with
   available hours on the day they are looking for.
   """
 

@@ -12,6 +12,7 @@ class Profile(FootballonModel):
   """
 
   user = models.OneToOneField('users.user', on_delete=models.CASCADE)
+  
   picture = models.ImageField(
     'profile picture',
     upload_to='users/pictures/',
@@ -28,7 +29,7 @@ class Profile(FootballonModel):
     help_text=(
       'The reputation of players depends on the number of games played'
       'and if they have actually attended. It also depends on the matches'
-      'created and its the calification. Moreover, after each match, a player'
+      'created and its calification. Moreover, after each match, a player'
       'can rate another player anonymously and randomly. Matches can also'
       'be rated by all players on a voluntary basis. In both cases the'
       'overall reputation of the players will be affected.'
