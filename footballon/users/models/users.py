@@ -17,9 +17,3 @@ class User(FootballonModel, AbstractUser):
   
   USERNAME_FIELD = 'email'
   REQUIRED_FIELDS = []
-
-  is_field_owner = models.BooleanField(
-    'field owner',
-    default=False,
-    help_text='Set to true when the user is the owner of a football field'
-  )
