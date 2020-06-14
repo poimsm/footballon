@@ -1,7 +1,7 @@
 # Django
 from django.db import models
 
-# Utils
+# Utilities
 from footballon.utils.models import FootballonModel
 
 class Profile(FootballonModel):
@@ -26,10 +26,10 @@ class Profile(FootballonModel):
   reputation = models.FloatField(
     default=3.5,
     help_text=(
-      'The reputation of the players depends on the number of games'
-      'played and which they have actually attended. It also depends'
-      'on the matches created. Moreover, after each match, a player can'
-      'rate another player anonymously and randomly. Matches can also'
+      'The reputation of players depends on the number of games played'
+      'and if they have actually attended. It also depends on the matches'
+      'created and its the calification. Moreover, after each match, a player'
+      'can rate another player anonymously and randomly. Matches can also'
       'be rated by all players on a voluntary basis. In both cases the'
       'overall reputation of the players will be affected.'
     )

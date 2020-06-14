@@ -2,7 +2,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-# Utils
+# Utilities
 from footballon.utils.models import FootballonModel
 
 class User(FootballonModel, AbstractUser):

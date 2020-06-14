@@ -1,11 +1,14 @@
+# Django
 from django.db import models
+
+# Utilities
 from footballon.utils.models import FootballonModel
 
 class Match(FootballonModel):
   """Match model.
 
   Users can create a new match or join an already created one.
-  When a user reserves an hour in a sports field, a new match
+  When a user reserves an hour in a sport field, a new match
   is automatically created.
   """
 

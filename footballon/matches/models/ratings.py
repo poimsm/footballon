@@ -1,4 +1,7 @@
+# Django
 from django.db import models
+
+# Utilities
 from footballon.utils.models import FootballonModel
 
 class Rating(FootballonModel):
